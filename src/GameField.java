@@ -23,6 +23,7 @@ public class GameField extends JPanel  implements ActionListener{
     public GameField() {
         setBackground(Color.black);
         restart = new Button("Restart");
+        restart.setSize(320, 25);
         restart.addActionListener(e -> this.initGame());
         initGame();
         addKeyListener(new FieldKeyListener());
@@ -83,6 +84,8 @@ public class GameField extends JPanel  implements ActionListener{
             String str = "Game Over";
             g.drawString(str,125,Constants.GAME_SIZE/2);
         }
+        int score = dots - 3;
+        g.drawString(String.valueOf(score),Constants.DOT_SIZE*19,Constants.DOT_SIZE);
     }
 
     public int move(){

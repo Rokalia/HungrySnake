@@ -7,7 +7,7 @@ public class MainWindow extends JFrame {
         setTitle("Hungry Snake");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocation(400, 400);
-        setSize(Constants.GAME_SIZE+16,Constants.GAME_SIZE+45);
+        setSize(Constants.GAME_SIZE+16,Constants.GAME_SIZE+66);
         setResizable(false);
         var mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
